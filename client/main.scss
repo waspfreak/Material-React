@@ -1,0 +1,73 @@
+// If you want to override materialize sass variables you can uncomment the following:
+@import "{poetic:materialize-scss}/sass/components/_color.scss";
+ //$primary-color: color("blue", "lighten-2");
+
+// import main scss file
+@import "{poetic:materialize-scss}/sass/materialize.scss";
+
+
+.fixed-box{
+  position: relative; height: 70px;
+}
+.absolute-box{
+  position: relative !important;
+  height: 70px;
+  .btn-container{
+    position: absolute;
+  }
+}
+
+.btn-container{
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.caption {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.is-hidden{
+  display: none;
+}
+
+.btn-floating {
+    // position: absolute;
+    // &.right{
+    //   right: 31px;
+    //   bottom: -20px;
+    // }
+    // &.left{
+    //   left: 31px;
+    //   bottom: -20px;
+    // }
+}
+
+.card.horizontal .card-image {
+    max-width: 50%;
+}
+
+.card.horizontal .card-stacked {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    position: relative;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
