@@ -1,36 +1,19 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
+
+import ColapseItem from './ColapseItem';
 
 
-// class ColapseItem extends Component {
-//   render() {
-//     return (
-//       <li>{this.props.itemList.text}</li>
-//     );
-//   }
-// }
-
-const ColapseContainer = (props) => {
+const Colapse = (props) => {
+  const ColapseItems = props.items.map((item) => {
+    return <ColapseItem key={item.id} item={item}/>
+  });
   return(
-    <div className='row'>
+    <div>
       <ul className="collapsible" data-collapsible="accordion">
-        <li>
-          <div className="collapsible-header">
-            <span className="new badge">4</span>
-            <i className="material-icons">filter_drama</i>First
-          </div>
-            <div className="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-        </li>
-        <li>
-          <div className="collapsible-header">
-            <span className="new badge red " data-badge-caption="custom caption">1</span>
-            <i className="material-icons">place</i>Second
-          </div>
-            <div className="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-        </li>
+        {ColapseItems}
       </ul>
     </div>
+  );
+};
 
-  )
-}
-
-export default ColapseContainer;
+export default Colapse;

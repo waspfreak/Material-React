@@ -7,7 +7,7 @@ const Button = (props) => {
          fixed,horizontal,clickToggle,
          floatingIcon, wavesLigh, wavesTeal,
          btn, btnFlat, btnLarge,
-         disabled, wavesEffect
+         disabled, wavesEffect,children
         } = props;
 
   let wavesEffectClass = classnames(
@@ -35,8 +35,8 @@ const Button = (props) => {
   return(
      <div className={`btn-container ${fixedBtn}`}>
       <a className= {`${wavesEffectClass} ${waves} ${floating} ${typeBtn} ${color} ${disabledbtn}`}href={link}>
-        { props.icon ? <i className={`material-icons ${positionIcon}`}>{icon}</i> : null }
-        {props.txt}
+        {children}
+        {txt}
       </a>
 
     {floatingIcon ?

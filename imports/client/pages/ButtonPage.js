@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Title from '../components/Title';
 import Button from '../components/Button';
+import Icon from '../components/Icon';
 
 import classnames from 'classnames';
 
@@ -13,21 +14,26 @@ const ButtonPage = () =>
 
         <h2 className="light">Raised</h2>
         <div className='section scrollspy'>
-          <Button txt='Button' wavesEffect icon='cloud' positionIcon='left' wavesLigh btn color='red' link=''/>
-          <Button txt='Button' wavesEffect icon='cloud' positionIcon='right' wavesLigh btn color='blue' link=''/>
-          <Button txt='Button' wavesEffect positionIcon='right' btn wavesLigh color='green' link=''/>
+          <Button txt='Button' wavesEffect wavesLigh btn color='red' link=''>
+            <Icon icon='cloud' sizeIcon='tiny' color='black' left/>
+          </Button>
+          <Button txt='Button' wavesEffect icon='cloud' wavesLigh btn color='blue' link=''>
+            <Icon icon='android' sizeIcon='tiny' color='white' right/>
+          </Button>
+          <Button txt='Button' wavesEffect btn wavesLigh color='green' link=''/>
         </div>
 
         <h2 className="light">Floating</h2>
         <div className='section scrollspy'>
-          <Button icon='add' wavesEffect wavesLigh position='right' btnLarge floating='btn-floating' color='red' link=''/>
+          <Button icon='add' wavesEffect wavesLigh position='right' btnLarge floating='btn-floating' color='red' link=''>
+            <Icon icon='android' sizeIcon='tiny' color='white' right/>
+          </Button>
         </div>
 
         <h2 className="light">Fixed Action Button</h2>
         <p className='caption'>If you want a fixed floating action button, you can add multiple actions that will appear on hover. Our demo is in the bottom righthand corner of the page.</p>
         <div className='section scrollspy'>
             <Button
-              icon='publish'
               wavesEffect
               fixed
               btnLarge
@@ -35,7 +41,9 @@ const ButtonPage = () =>
               floatingIcon
               color='red'
               wavesLigh
-           />
+           >
+               <Icon icon='view_headline' sizeIcon='tiny' color='white' right/>
+           </Button>
           </div>
 
 
@@ -45,7 +53,6 @@ const ButtonPage = () =>
           <div className='section scrollspy'>
             <div className='absolute-box'>
               <Button
-                icon='menu'
                 wavesEffect
                 fixed
                 btnLarge
@@ -55,7 +62,9 @@ const ButtonPage = () =>
                 clickToggle
                 color='red'
                 wavesLigh
-              />
+              >
+                <Icon icon='android' sizeIcon='tiny' color='white' right/>
+            </Button>
             </div>
           </div>
 
@@ -64,7 +73,6 @@ const ButtonPage = () =>
           <div className='section scrollspy'>
             <div className='absolute-box'>
               <Button
-                icon='publish'
                 wavesEffect
                 fixed
                 btnLarge
@@ -74,22 +82,30 @@ const ButtonPage = () =>
                 clickToggle
                 color='red'
                 wavesLigh
-              />
+              >
+                <Icon icon='publish' sizeIcon='tiny' color='white' right/>
+            </Button>
             </div>
           </div>
 
           <h2 className="light">Flat</h2>
           <p className='caption'>Flat buttons are used to reduce excessive layering. For example, flat buttons are usually used for actions within a card or modal so there aren't too many overlapping shadows.</p>
           <div className='section scrollspy'>
-            <Button txt='Button Flat' positionIcon='left' wavesTeal btnFlat/>
+            <Button txt='Button Flat' wavesTeal btnFlat>
+              <Icon icon='publish' sizeIcon='tiny' color='pink' right/>
+          </Button>
           </div>
 
           <h2 className="light">Large</h2>
           <p className='caption'>This button has a larger height for buttons that need more attention.</p>
           <div className='section scrollspy'>
             <div className='section scrollspy'>
-              <Button txt='Button' wavesEffect icon='cloud' positionIcon='left' wavesLigh btnLarge color='green' link=''/>
-              <Button txt='Button' wavesEffect icon='cloud' positionIcon='right' wavesLigh btnLarge color='blue' link=''/>
+              <Button txt='Button' wavesEffect icon='cloud' wavesLigh btnLarge color='green' link=''>
+              <Icon icon='info' sizeIcon='tiny' color='white' left/>
+              </Button>
+              <Button txt='Button' wavesEffect icon='cloud' wavesLigh btnLarge color='blue' link=''>
+                <Icon icon='library_books' sizeIcon='tiny' color='white' right/>
+              </Button>
               <Button txt='Button' wavesEffect btnLarge wavesLigh color='green' link=''/>
             </div>
           </div>
@@ -100,7 +116,9 @@ const ButtonPage = () =>
               <Button txt='Disable' btnLarge disabled/>
               <Button txt='Disable' btn disabled/>
               <Button txt='Disable' btnFlat disabled/>
-              <Button icon='add' btnLarge disabled floating='btn-floating'/>
+              <Button icon='add' btnLarge disabled floating='btn-floating'>
+                <Icon icon='speaker_phone' sizeIcon='tiny' color='white' right/>
+              </Button>
             </div>
 
 

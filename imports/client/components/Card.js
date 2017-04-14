@@ -20,7 +20,8 @@ const Card = (props) => {
          btnSize,
          btnColor,
          btnPosition,
-         horizontal
+         horizontal,
+         children
         }= props;
 
   let col = classnames(
@@ -54,7 +55,8 @@ const Card = (props) => {
               {imgTitle ?  <span className="card-title">{imgTitle}</span> : null}
 
               <a className={`btn-floating ${btnSize} halfway-fab waves-effect waves-light ${btnPosition} ${btnColor} ${showIcon}`}>
-                <i className="material-icons">{icon}</i>
+                {children}
+                {/* <i className="material-icons">{icon}</i> */}
               </a>
 
             </div>
@@ -62,6 +64,7 @@ const Card = (props) => {
             <div className={HorizontalCardContainer}>
               <div className={`card-content ${colorText}-text`}>
                 {Title ?  <span className="card-title activator">{Title}
+                            {children}
                             <i className="material-icons right">more_vert</i>
                           </span> : null}
                 {Content ? <p>{Content}</p> : null}

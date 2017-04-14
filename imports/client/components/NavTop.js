@@ -12,6 +12,7 @@ const NavTop = (props) => {
            <li><Link to='/icons'>Icons</Link></li>
            <li><Link to='/cards'>Cards</Link></li>
            <li><Link to='/buttons'>Buttons</Link></li>
+           <li><Link to='/badges'>Badges</Link></li>
            <li><Link to='/about'>About</Link></li>
            {/* <li><Link to='/guideline'>Guideline<span className="badge red ">New</span></Link></li> */}
          </ul>

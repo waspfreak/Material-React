@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 
 import Title from '../components/Title';
 import Card from '../components/Card';
+import Icon from '../components/Icon';
+
+
 
 
 const CardsPage = () =>
@@ -54,7 +57,9 @@ const CardsPage = () =>
             btnSize='btn-large'
             btnColor='red'
             btnPosition='right'
-      />
+      >
+        <Icon icon='android' sizeIcon='tiny' color='white' right/>
+      </Card>
     </div>
 
     <div className='section'>

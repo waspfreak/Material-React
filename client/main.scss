@@ -5,6 +5,12 @@
 // import main scss file
 @import "{poetic:materialize-scss}/sass/materialize.scss";
 
+@import "./css/components/badge.scss";
+@import "./css/components/checkbox.scss";
+@import "./css/components/utility.scss";
+
+
+
 
 .fixed-box{
   position: relative; height: 70px;
@@ -29,21 +35,8 @@
     margin-bottom: 30px;
 }
 
-.is-hidden{
-  display: none;
-}
 
-.btn-floating {
-    // position: absolute;
-    // &.right{
-    //   right: 31px;
-    //   bottom: -20px;
-    // }
-    // &.left{
-    //   left: 31px;
-    //   bottom: -20px;
-    // }
-}
+
 
 .card.horizontal .card-image {
     max-width: 50%;
@@ -61,13 +54,3 @@
     flex: 1;
     position: relative;
 }
-
-body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
-
-  main {
-    flex: 1 0 auto;
-  }

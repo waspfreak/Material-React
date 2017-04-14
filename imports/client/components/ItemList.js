@@ -1,12 +1,13 @@
-import React, { Component, PropTypes } from 'react';
-import { render } from 'react-dom';
+import React from 'react';
 
+const ItemList = ({item}) => {
+  //console.log(item);
+  //const imageURL = video.snippet.thumbnails.default.url
+  // const video = props.video;
 
+  return <li className="" id={item.id}>
+            {item.text}
+          </li>
+};
 
-export default class ItemList extends Component {
-  render() {
-    return (
-      <li><a className='grey-text text-lighten-3'>{this.props.itemList.text}</a></li>
-    );
-  }
-}
+export default ItemList;

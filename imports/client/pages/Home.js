@@ -9,7 +9,7 @@ const Home = () =>
            title='Materialize & ReactJs'
            subtitle="A Set of React Components that Implement Google's Material Design"
     />
-          <Button txt='Get Started' color='pink'/>
+          <Button txt='Button' wavesEffect positionIcon='right' btn wavesLigh color='pink'/>
   </main>
 
 export default Home;
