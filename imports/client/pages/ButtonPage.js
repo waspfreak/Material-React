@@ -8,7 +8,8 @@ import classnames from 'classnames';
 
 const ButtonPage = () =>
   <main>
-    <Title className='light'
+    <Title priority='2'
+           className='light'
            title='Buttons'
            subtitle='There are 3 main button types described in material design. The raised button is a standard button that signify actions and seek to give depth to a mostly flat page. The floating circular action button is meant for very important functions. Flat buttons are usually used within elements that already have depth like cards or modals.'/>
 

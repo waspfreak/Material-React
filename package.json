@@ -13,6 +13,7 @@
     "rc-checkbox": "^1.5.0",
     "react": "^15.4.2",
     "react-addons-pure-render-mixin": "^15.4.2",
+    "react-constant": "^2.0.1",
     "react-dom": "^15.4.2",
     "react-komposer": "^2.0.0",
     "react-router": "^3.0.3",

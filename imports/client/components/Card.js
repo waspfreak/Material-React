@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import classnames from 'classnames';
 import { Link } from 'react-router';
-
+import Row from '../components/Row';
+import Col from '../components/Col';
 
 const Card = (props) => {
   const {BgColor,
@@ -13,6 +14,7 @@ const Card = (props) => {
          textLink2,
          urlLink2,
          numCol,
+         numColLarge,
          colorText,
          imgTitle,
          srcImg,
@@ -46,8 +48,9 @@ const Card = (props) => {
   // );
 
   return(
-    <div className="row">
-        <div className={`${col} m${numCol}`}>
+    <Row>
+
+        <div className={`${col} m${numCol} l${numColLarge}`}>
           <div className={`card ${HorizontalCardClass} ${BgColor} ${ExtraBg}`}>
 
             <div className={imgCardClass}>
@@ -58,7 +61,6 @@ const Card = (props) => {
                 {children}
                 {/* <i className="material-icons">{icon}</i> */}
               </a>
-
             </div>
 
             <div className={HorizontalCardContainer}>
@@ -83,7 +85,7 @@ const Card = (props) => {
             </div>
           </div>
         </div>
-      </div>
+      </Row>
   )
 }
 

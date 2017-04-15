@@ -8,7 +8,7 @@ import classnames from 'classnames';
 
 const IconsPage = () =>
   <main>
-    <Title className='light' title='Icons'
+    <Title priority='2' className='light' title='Icons'
           subtitle='We have included 740 Material Design Icons courtesy of Google. You can download them directly from the Material Design specs.'/>
 
 

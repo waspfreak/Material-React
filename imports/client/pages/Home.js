@@ -5,11 +5,11 @@ import Button from '../components/Button';
 
 const Home = () =>
   <main>
-    <Title className='light'
+    <Title priority='2'
+           className='light'
            title='Materialize & ReactJs'
-           subtitle="A Set of React Components that Implement Google's Material Design"
-    />
-          <Button txt='Button' wavesEffect positionIcon='right' btn wavesLigh color='pink'/>
+           subtitle="A Set of React Components that Implement Google's Material Design"/>
+    <Button txt='Button' wavesEffect positionIcon='right' btn wavesLigh color='pink'/>
   </main>
 
 export default Home;

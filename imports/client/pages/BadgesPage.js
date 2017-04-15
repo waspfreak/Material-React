@@ -9,7 +9,7 @@ import classnames from 'classnames';
 
 const BadgesPage = () =>
   <main>
-    <Title className='light' title='Badges'/>
+    <Title priority='2' className='light' title='Badges'/>
 
 
     <div className='row '>

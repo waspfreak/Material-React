@@ -30,7 +30,7 @@ constructor(props){
 render() {
   return(
     <main>
-      <Title className='' title='Guideline'/>
+      <Title priority='2' className='' title='Guideline'/>
 
       <List items={this.state.lists} />
       <Colapse items={this.state.lists}/>

@@ -2,16 +2,19 @@ import React, { Component } from 'react';
 import classnames from 'classnames';
 
 const Title = (props) => {
-  const {title, subtitle} = props;
+  const {title, subtitle, priority} = props;
+
+  const CustomTag = `h${priority}`;
+
   let hidden = classnames(
     'caption',
     {'is-hidden': !subtitle}
   );
   return(
     <div>
-      <h1 className={props.className}>
+      <CustomTag className={props.className}>
         {title}
-      </h1>
+      </CustomTag>
       <p className={hidden}>
         { subtitle }
       </p>
